@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Post
+
+
+# Simple admin page without customization.
+admin.site.register(Post)
+
