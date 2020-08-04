@@ -17,7 +17,7 @@ from .forms import EmailPostForm, CommentForm
 
 
 def post_list(request, tag_slug=None):
-    object_list = Post.published.all().order_by("id")
+    object_list = Post.published.all().order_by("-id")
 
     tag = None
 
